@@ -1,0 +1,235 @@
+.Artist-container {
+  height: 100%;
+  min-width: 100%;
+  margin: 0px;
+  padding: 0px !important;
+  display: flex;
+  overflow: hidden;
+}
+
+.Artist-mainContent {
+  min-height: 100%;
+  flex: 1;
+  overflow: hidden;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid black;
+}
+
+.Artist-navBar {
+  width: 20%;
+}
+
+.Artist-pArtistAndNowPlayingContainer {
+  min-height: 100%;
+  display: flex;
+}
+
+.Artist-img {
+  width: 100%;
+  height: 30%;
+}
+
+.Artist-img img {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Artist-profileBarAndList {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  background-color: rgba(249, 250, 250, 0.923);
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px 4px rgb(181, 181, 181);
+  padding: 5%;
+  border-radius: 5%;
+}
+
+.Artist-artistTitle {
+  margin-left: 2%;
+  font-weight: 600;
+}
+
+.Artist-songTitle {
+  margin-left: 30%;
+  font-weight: 700;
+  color:black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Artist-playingContainer {
+  height: max-content;
+  padding: 2%;
+  padding-bottom: 5%;
+  width: 30%;
+  margin-right: 1%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(205, 205, 205, 0.449);
+  align-self: center;
+}
+
+.Artist-nowImage {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+.Artist-nowImage p {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: 600;
+}
+
+.Artist-nowImageContainer {
+  margin: 2%;
+}
+
+.Artist-nowImageContainer img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: none;
+  overflow: hidden;
+}
+
+.Artist-nowPlayingContainer {
+  flex: 1;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Artist-playingTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5%;
+  border-bottom: 2px solid rgb(190, 186, 186);
+}
+
+.Artist-playingSongName {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.Artist-playingArtistName {
+  font-weight: 300;
+}
+
+.Artist-nowPlayingContainer img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: none;
+  border-radius: 10%;
+}
+
+.Artist-audioBar {
+  margin-top: 20%;
+  width: 100%;
+}
+
+.Artist-artistName {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.Artist-songImage {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: none;
+  border-radius: 10%;
+}
+
+.Artist-name {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  margin-bottom: 0px;
+}
+.Artist-joinDate {
+  font-size: larger;
+}
+
+.Artist-SongCard {
+  display: flex;
+  height: 35%;
+  width: 100%;
+  align-items: center;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.236);
+  background-color: #f9f9f9e4;
+  cursor: pointer;
+  padding-left: 2%;
+  border-radius: 15px;
+}
+
+.Artist-songsBy{
+    align-self: flex-start;
+    margin-bottom: 0px;
+}
+
+.Artist-SongCard:hover{
+    scale: 1.02;
+    transition: all 0.2s ease-in-out;
+}
+
+.Artist-songList {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 2;
+  background-color: rgba(204, 202, 202, 0.612);
+  gap: 3%;
+  padding:2%;
+  border-radius: 20px;
+}
+
+.Artist-songList::-webkit-scrollbar {
+  display: none;
+}
+
+.Artist-SongCardImg {
+  width: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+
+
+.Artist-SongCardImg img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Artist-songandartistcontainer {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.Artist-artistTitle {
+  margin-left: 2%;
+  font-weight: 600;
+}

@@ -1,0 +1,56 @@
+.liked-songs-page {
+  background: linear-gradient(to right, #f9f5f0, #f1e7dd);
+  padding: 60px 30px;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.liked-heading {
+  font-size: 42px;
+  font-weight: 700;
+  color: #5e3c18;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.songs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.song-card {
+  background: rgba(255, 248, 240, 0.7);
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(176, 141, 87, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(169, 113, 66, 0.3);
+}
+
+.song-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5e3c18;
+  margin-bottom: 8px;
+}
+
+.song-card p {
+  font-size: 16px;
+  color: #7a5c3c;
+  margin-bottom: 12px;
+}
+
+.song-card audio {
+  width: 100%;
+  border-radius: 8px;
+}

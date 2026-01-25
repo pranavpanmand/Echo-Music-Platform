@@ -1,0 +1,186 @@
+/* Container */
+.playlist-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #c3bef0, #ffffff);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #4b46a9, #7b4cd1);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(75, 70, 169, 0.4);
+}
+
+.header-title {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 1.125rem;
+  color: #d6cfff;
+}
+
+/* Main content wrapper */
+.content {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Playlist header: title + select */
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.playlist-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.language-select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.language-select:focus {
+  box-shadow: 0 0 4px 2px #635fc7;
+  border-color: #635fc7;
+}
+
+/* Loading and no songs messages */
+.loading,
+.no-songs {
+  text-align: center;
+  padding: 40px 0;
+  font-weight: 600;
+  color: #635fc7;
+  font-size: 1.2rem;
+}
+
+.no-songs {
+  color: #999;
+}
+
+/* Songs grid */
+.songs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Responsive grids */
+@media (min-width: 600px) {
+  .songs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .songs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual song card */
+.song-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.song-card:hover {
+  box-shadow: 0 6px 12px rgba(75, 70, 169, 0.3);
+}
+
+.song-title {
+  color: #4a4a97;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 1.125rem;
+}
+
+.song-artist {
+  color: #777;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+/* Audio player */
+.audio-player {
+  width: 100%;
+  border-radius: 4px;
+}
+.language-select {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: 1.5px solid #a0a0ff;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(99, 95, 199, 0.2);
+  transition: all 0.3s ease;
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg%20width%3d%2210%22%20height%3d%227%22%20viewBox%3d%220%200%2010%207%22%20fill%3d%22none%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%3e%3cpath%20d%3d%22M1%200L5%204L9%200H1Z%22%20fill%3d%22%23635FC7%22/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px 7px;
+}
+
+.language-select:hover {
+  border-color: #635fc7;
+  box-shadow: 0 4px 10px rgba(99, 95, 199, 0.35);
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: #4a3fbf;
+  box-shadow: 0 0 8px 3px rgba(74, 63, 191, 0.5);
+  background-color: #fafaff;
+}
+.language-select {
+  width: 220px; /* increased width */
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: 1.5px solid #a0a0ff;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(99, 95, 199, 0.2);
+  transition: all 0.3s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg%20width%3d%2210%22%20height%3d%227%22%20viewBox%3d%220%200%2010%207%22%20fill%3d%22none%22%20xmlns%3d%22http%3a//www.w3.org/2000/svg%22%3e%3cpath%20d%3d%22M1%200L5%204L9%200H1Z%22%20fill%3d%22%23635FC7%22/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px 7px;
+}
+
+.language-select:hover {
+  border-color: #635fc7;
+  box-shadow: 0 4px 10px rgba(99, 95, 199, 0.35);
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: #4a3fbf;
+  box-shadow: 0 0 8px 3px rgba(74, 63, 191, 0.5);
+  background-color: #fafaff;
+}

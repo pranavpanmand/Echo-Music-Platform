@@ -1,0 +1,256 @@
+
+.features-page {
+  background: linear-gradient(to right, #f9f5f0, #f1e7dd);
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.features-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #5e3c18;
+}
+
+.features-header p {
+  font-size: 18px;
+  color: #8d674a;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+}
+
+.feature-glass-card {
+  background: rgba(255, 248, 240, 0.7);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(176, 141, 87, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(169, 113, 66, 0.3);
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #a97142;
+}
+
+.feature-glass-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #5e3c18;
+}
+
+.feature-glass-card p {
+  font-size: 15px;
+  color: #7a5c3c;
+  line-height: 1.6;
+}
+
+.highlight-cta {
+  background: linear-gradient(to right, #f7efe8, #f0e0cf);
+  padding: 60px 30px;
+  text-align: center;
+  border-radius: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(160, 90, 40, 0.15);
+}
+
+.highlight-cta h2 {
+  font-size: 32px;
+  color: #4b2c0c;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.highlight-cta p {
+  font-size: 17px;
+  color: #734c29;
+  margin-bottom: 25px;
+}
+
+.glow-button {
+  background-color: #a97142;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #a97142;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.glow-button:hover {
+  background-color: #b88658;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #b88658;
+}
+
+.body {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+
+.equalizer-animation {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  height: 60px;
+  align-items: flex-end;
+}
+
+.equalizer-animation span {
+  width: 6px;
+  height: 30px;
+  background: #a97142;
+  animation: bounce 1s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+.equalizer-animation span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.equalizer-animation span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.equalizer-animation span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.equalizer-animation span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    height: 30px;
+  }
+  50% {
+    height: 60px;
+    background: #7a4a24;
+  }
+}
+
+.lottie-wrapper {
+  width: 250px;
+  margin: 0 auto 20px;
+}
+
+.faqs-section {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faq-item {
+  border-bottom: 1px solid #b08d57;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  margin-top: 0.5rem;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #5e3c18;
+}
+
+.faq-answer {
+  font-size: 0.95rem;
+  color: #7c5a39;
+}
+
+.review-carousel {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.review-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #5e3c18;
+}
+
+.review-author {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #a97142;
+}
+
+.carousel-controls {
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #cbb393;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #a97142;
+}
