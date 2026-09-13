@@ -1,8 +1,28 @@
-html, body,#root{
+html, body, #root {
     height: 100vh;
     min-width: 100vw;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #f7f8fc 0%, #f0f1f5 100%);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
 }

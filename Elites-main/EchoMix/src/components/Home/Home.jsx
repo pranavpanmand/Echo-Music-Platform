@@ -6,12 +6,18 @@ import ss from "./songSymbol.png";
 import { useUser } from "../../UserContext/UserContext";
 import { useNavigate } from "react-router";
 import axios from "axios";
-
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 function Home() {
   const { user, song, setSong } = useUser();
   const navigate = useNavigate();
   const [historyList, setHistoryList] = useState([]);
   const [sampleHistoryList, setSampleHistoryList] = useState([]);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const toggleLike = () => {
+    setIsLiked(!isLiked);
+    // In a real app, this would also send an API request to update the user's liked songs
+  };
 
   function createArtistCard(src, artistName) {
     return (
@@ -245,7 +251,16 @@ function Home() {
                 <div className="nowPlayingContainer">
                   <img src={getArtistImgSrc(song.artistName)} alt="" />
                   <div className="playingTitleContainer">
-                    <p className="playingSongName">{song.songName}</p>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                      <p className="playingSongName">{song.songName}</p>
+                      <button 
+                        onClick={toggleLike} 
+                        style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.5rem', color: isLiked ? '#ff4b4b' : '#1a1a2e', transition: 'color 0.3s ease' }}
+                        title={isLiked ? "Unlike" : "Like"}
+                      >
+                        {isLiked ? <FaHeart /> : <FaRegHeart />}
+                      </button>
+                    </div>
                     <p className="playingArtistName">{song.artistName}</p>
                   </div>
                   <audio
